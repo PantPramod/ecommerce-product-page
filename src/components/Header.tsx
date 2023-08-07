@@ -17,7 +17,7 @@ export type propType = {
 }
 const Header = ({ cartData, setCartData }: propType) => {
   const [showCart, setShowCart] = useState(false)
-  const [showMenu, setShowMenu] = useState(false)
+  const [showMenu, setShowMenu] = useState(true)
   return (
     <>
     <header className="flex justify-between items-center mx-6 py-6 border-b-gray-200 border-b-2 relative">
@@ -88,7 +88,7 @@ const Header = ({ cartData, setCartData }: propType) => {
         </div>
       }
     </header>
-    <div className={`z-[999999] w-full ${showMenu?"-translate-x-[100%]": "translate-x-[0%]"} fixed top-0 left-0 right-0 min-h-screen bg-[#00000077] transition-all ease-in-out duration-300`}>
+    <div className={`sm:hidden z-[999999] w-full ${showMenu?"-translate-x-[100%]": "translate-x-[0%]"} fixed top-0 left-0 right-0 min-h-screen bg-[#00000077] transition-all ease-in-out duration-300`}>
               <ul className='bg-white w-[80%] min-h-screen px-10 pt-10'>
                 <li><img 
                 
