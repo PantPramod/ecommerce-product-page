@@ -62,7 +62,7 @@ const Header = ({ cartData, setCartData }: propType) => {
             &&
             <div className='flex justify-center items-center min-h-[200px]'>Your cart is empty.</div>}
           {cartData.length > 0 &&
-            cartData.map((item, index) => <div className='p-3 '>
+            cartData.map((item) => <div className='p-3 '>
               <div className='flex gap-x-2 items-center'>
                 <img
                   src={item.img}
